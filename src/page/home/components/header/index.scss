@@ -1,0 +1,82 @@
+.header {
+  width: 100%;
+  background: #f2f2f2;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  .top {
+    height: 0.84rem;
+    display: flex;
+    align-items: center;
+    .logo, .login {
+      width: 0.6rem;
+      margin: 0 0.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      & > img {
+        width: 80%;
+        display: block;
+      }
+    }
+    .search {
+      flex: 1;
+      border: 1px solid #e5e5e5;
+      background: #fff;
+      color: rgba(0, 0, 0, 0.3);
+      border-radius: 0.04rem;
+      font-size: 0.3rem;
+      display: flex;
+      align-items: center;
+      .icon {
+        width: 0.6rem;
+        height: 0.6rem;
+        background: url("./search.png") no-repeat center;
+        background-size: 0.4rem, 0.4rem;
+      }
+    }
+    .login {
+      .btn {
+        width: 0.4rem;
+        height: 0.4rem;
+        background: url("./user.png") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+  .nav {
+    font-size: 0.26rem;
+    color: #747474;
+    position: relative;
+    & > ul {
+      margin-right: 0.68rem;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      & > li {
+        white-space: nowrap;
+        padding: 0 0.25rem;
+        & > span {
+          line-height: 0.55rem;
+          display: inline-block;
+          border-bottom: 2px solid rgba(237, 91, 0, 0);
+          &.active {
+            color: rgb(237, 91, 0);
+            border-color: rgb(237, 91, 0);
+          }
+        }
+      }
+    }
+    .dropdown-btn {
+      width: 0.68rem;
+      height: 0.55rem;
+      line-height: 0.55rem;
+      background: #f2f2f2;
+      text-align: center;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+  }
+}
